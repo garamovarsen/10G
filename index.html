@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт</title>
+    <style>
+        /* Стили для оформления страницы */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .gallery-row {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        .gallery-item {
+            text-align: center;
+            margin: 0 10px;
+            width: calc(50% - 20px); /* По две картинки в ряду на больших экранах */
+        }
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Медиа-запрос для адаптивного макета */
+        @media only screen and (max-width: 600px) {
+            .gallery-item {
+                width: calc(100% - 20px); /* По одной картинке в ряду на устройствах с шириной экрана до 600px */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>10G</h1>
+    </header>
+    <nav>
+        <a href="#gallery">Галерея учеников</a>
+        <a href="https://t.me/ваш_аккаунт">Telegram</a>
+    </nav>
+    <div id="gallery" class="gallery">
+        <!-- Здесь будут изображения учеников -->
+        <div class="gallery-row">
+            <div class="gallery-item">
+                <img src="images/2023-11-14 22.32.21.jpg" alt="Ученик 1">
+                <p>Arsen</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/2023-11-14 22.32.21.jpg" alt="Ученик 2">
+                <p>Arsen</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/2023-11-14 22.32.21.jpg" alt="Ученик 2">
+                <p>Arsen</p>
+            </div>
+        </div>
+        <!-- Добавьте еще изображения и имена учеников по мере необходимости -->
+    </div>
+    <footer>
+        <p>Связь с нами: <a href="https://t.me/ваш_аккаунт">Telegram</a></p>
+    </footer>
+</body>
+</html>
